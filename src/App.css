@@ -1,0 +1,130 @@
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+   background: linear-gradient(135deg, #74ebd5, #9face6);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 40px;
+ }
+
+ .todo-app {
+   background: #fff;
+   width: 100%;
+   max-width: 500px;
+   border-radius: 12px;
+   padding: 30px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ h1 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: #333;
+   font-size: 1.6rem;
+ }
+
+ /* Todo Form */
+ .todo-form {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 25px;
+ }
+
+ .todo-input {
+   flex: 1;
+   padding: 12px 14px;
+   border: 2px solid #9face6;
+   border-radius: 8px;
+   outline: none;
+   font-size: 1rem;
+   transition: border 0.2s ease-in-out;
+ }
+
+ .todo-input:focus {
+   border-color: #74ebd5;
+ }
+
+ .todo-input.edit {
+   border-color: #f39c12;
+ }
+
+ .todo-button {
+   margin-left: 10px;
+   padding: 12px 18px;
+   border: none;
+   background: #74ebd5;
+   color: white;
+   font-size: 1rem;
+   font-weight: bold;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background 0.2s ease-in-out;
+ }
+
+ .todo-button:hover {
+   background: #5ecac0;
+ }
+
+ .todo-button.edit {
+   background: #f39c12;
+ }
+
+ .todo-button.edit:hover {
+   background: #d9830f;
+ }
+
+ /* Todo List Items */
+ .todo-row {
+   background: #f7f7f7;
+   padding: 14px 16px;
+   margin-bottom: 12px;
+   border-radius: 8px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: background 0.2s ease-in-out;
+ }
+
+ .todo-row:hover {
+   background: #ececec;
+ }
+
+ .todo-row.complete {
+   text-decoration: line-through;
+   opacity: 0.6;
+ }
+
+ /* Icons */
+ .icons {
+   display: flex;
+   gap: 10px;
+   font-size: 1.2rem;
+ }
+
+ .delete-icon {
+   color: #e74c3c;
+   cursor: pointer;
+   transition: transform 0.2s;
+ }
+
+ .delete-icon:hover {
+   transform: scale(1.2);
+ }
+
+ .edit-icon {
+   color: #3498db;
+   cursor: pointer;
+   transition: transform 0.2s;
+ }
+
+ .edit-icon:hover {
+   transform: scale(1.2);
+ }
